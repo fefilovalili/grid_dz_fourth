@@ -1,0 +1,94 @@
+* {}
+
+body {
+    display: grid;
+    grid-template-areas: "header header header" "nav article ads" "footer footer footer";
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 20% 1fr 15%;
+    grid-gap: 5px;
+    height: 100vh;
+    margin: 0;
+    background-image: url(https://html5book.ru/wp-content/uploads/2016/09/background74.jpg);
+    background-attachment: fixed;
+}
+
+.header {
+    grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #bffdfa;
+    height: max-content;
+    padding: 1ex 10ex;
+}
+
+.footer p {
+    font-family: 'Pacifico', cursive;
+    color: #248C86;
+}
+
+.article {
+    grid-area: article;
+}
+
+.menu {
+    grid-area: nav;
+    width: 200px;
+    /* Set a width if you like */
+    font-family: 'Caveat', cursive;
+    font-family: 'Pacifico', cursive;
+}
+
+.menu a {
+    color: #248C86;
+    background-color: #64D9D2;
+    /* Black text color */
+    display: block;
+    /* Make the links appear below each other */
+    padding: 12px;
+    /* Add some padding */
+    text-decoration: none;
+    /* Remove underline from links */
+}
+
+.menu li {
+    list-style-type: none;
+    padding: 10px 7px;
+    cursor: pointer;
+    border: 2px solid gray;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.menu a:active {
+    color: #248C86;
+    background-color: #64D9D2;
+    /* Dark grey background on mouse-over */
+}
+
+.menu a:hover {
+    background-color: #248C86;
+    color: #64D9D2;
+    /* Add a green color to the "active/current" link */
+}
+
+.ads {
+    grid-area: ads;
+}
+
+.abs_iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.header_name {
+    font-family: 'Pacifico', cursive;
+    margin-top: auto;
+    padding-left: 2ex;
+    color: #bffdfa;
+    background-color: #248C86;
+    text-shadow: #64D9D2 -1px 5px 3px;
+}
