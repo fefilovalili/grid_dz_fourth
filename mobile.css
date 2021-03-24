@@ -1,0 +1,33 @@
+@media screen and (max-width: 768px) {
+    body {
+        display: grid;
+        grid-template-areas: "header" "nav" "article" "abs""footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        margin:  0 auto;
+      }
+    .menu{  width: 90%; }
+    .menu li{ max-width: 30%;
+        padding: 10px 7px;
+         margin:  0 auto;
+     }
+    .menu a {
+        display: block;
+        padding: -1em;
+        margin:  0 auto;
+    }
+    .header{
+        font-size: 0.9em;
+    }
+    .abs{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {   
+    .menu{width: 90%;}  
+}
